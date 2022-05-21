@@ -125,10 +125,10 @@ body {
 
 .top-nav__search-button {
     padding: 2px;
-    
     width: 28px;
     height: 28px;
-    
+
+    cursor: pointer;
     border: 2px solid transparent;
     background-color: transparent;
     text-align: center;
@@ -137,20 +137,19 @@ body {
 .top-nav__search-icon {
     display: inline;
     vertical-align: middle;
-    
+    transform: translate(-2px, -2px);
+
     border: 2px solid transparent;
     width: 24px;
     height: 24px;
     margin-right: 75px;
-
-    transform: translate(-2px, -2px);
 }
 
-.top-nav__search-button:hover path{
+.top-nav__search-button:hover path {
     stroke: #FF9900;
 }
 
-.top-nav__search-button:hover rect{
+.top-nav__search-button:hover rect {
     fill: #FF9900;
 }
 
