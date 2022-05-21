@@ -69,15 +69,17 @@ body {
 
 /* header */
 .header {
-    padding: 14px 0px 14px 75px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
     position: absolute;
     left: 0px;
     right: 0px;
+}
+
+.header__container {
+    padding: 14px 0px 14px 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header__spacer {
@@ -120,10 +122,11 @@ body {
 
     background-image: url("/img/hero/bg1.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .hero__heading {
-    max-width: 45%;
+    max-width: 55%;
     margin-bottom: 20px;
 
     color: #FFF;
