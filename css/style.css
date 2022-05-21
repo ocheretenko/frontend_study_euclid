@@ -181,7 +181,7 @@ body {
 
 .hero__heading {
     max-width: 55%;
-    margin-bottom: 20px;
+    margin: 0px 0px 20px 0px;
 
     color: #FFF;
     font-family: Montserrat;
@@ -196,7 +196,7 @@ body {
 
 .hero__content {
     max-width: 50%;
-    margin-bottom: 90px;
+    margin: 0px 0px 90px 0px;
 
     color: #FFF;
     font-family: Montserrat;
