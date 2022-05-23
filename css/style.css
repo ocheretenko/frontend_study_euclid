@@ -42,7 +42,23 @@ body {
     width: 1770px;
 }
 
-.section-heading {}
+.section-heading {
+    margin: 0;
+
+    color: #333;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1; 
+}
+
+.section-content {
+    color: #333;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+}
 
 .button {
     display: inline-block;
@@ -69,6 +85,8 @@ body {
 
 /* header */
 .header {
+    height: 100px;
+
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
     position: absolute;
     left: 0px;
@@ -76,7 +94,7 @@ body {
 }
 
 .header__container {
-    padding: 14px 0px 14px 75px;
+    padding: 14px 0px 14px 0px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -203,4 +221,15 @@ body {
     font-size: 24px;
     font-weight: 700;
     line-height: 29px;
+}
+
+/* about */
+.about__heading {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.about__content {
+    margin-bottom: 50px;
+    width: 69.5%;
 }
