@@ -277,21 +277,15 @@ body {
 .about__card-block-left__button {
 
 }
-/* 
-@media (max-width: 1920px) {
-    .container {
-        width: 80vw;
-    }
-} */
 
-@media (max-width: 1769px) {
+@media (max-width: 1870px) {
     .container {
         width: auto;
-        margin: 0 !important;
+        margin: 0 50px !important;
     }
 }
 
-@media (max-width: 1499px) {
+@media (max-width: 1340px) {
     .top-nav {
         display: none;
     }
