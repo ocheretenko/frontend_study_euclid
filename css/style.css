@@ -481,8 +481,9 @@ body {
     border-top: 1px solid #CACACA;
 }
 
-.faq__item:last-child {
-    border-bottom: 1px solid #CACACA;
+.faq__fake-item {
+    margin: 0;
+    padding: 0;
 }
 
 .faq__spoiler-button {
@@ -490,6 +491,36 @@ body {
     height: 50px;
 
     display: inline-block;
+}
+
+.faq__item:hover {
+    border-color: #FF9900;
+}
+
+.faq__item:hover + .faq__item,
+.faq__item:hover + .faq__item {
+    border-color: #FF9900;
+}
+
+.faq__item:hover .faq__item-subheading,
+.faq__item:focus .faq__item-subheading{
+    color: #FF9900;
+}
+
+
+.faq__item:hover .faq__ellipse,
+.faq__item:focus .faq__ellipse {
+    fill: #FF9900;
+}
+
+.faq__item:hover .faq__plus,
+.faq__item:focus .faq__plus {
+    fill: #FFF;
+}
+
+.faq__item-opened .faq__plus {
+    transform-origin: 50% 50%;
+    transform: rotate(45deg);
 }
 
 .faq__item-subheading {
