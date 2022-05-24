@@ -56,12 +56,22 @@ body {
     line-height: 1; 
 }
 
-.section-content {
+.section-content-font {
     color: #333;
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 400;
     line-height: 32px;
+}
+
+.subheading {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    color: #333333;
+
+    margin: 0px 0px 8px 0px;
 }
 
 .button {
@@ -88,11 +98,19 @@ body {
     background-color: #E1670E;
 }
 
+.button2:hover,
+.button2:focus {
+    background-color: #F7B045;
+}
+
+.button2:active {
+    background-color: #E1670E;
+}
+
 .transparent-button-orange {
     border: 3px solid #FF9900;
     background-color: transparent;
 }
-
 
 .transparent-button-orange:hover,
 .transparent-button-orange:focus {
@@ -103,6 +121,27 @@ body {
 .transparent-button-orange:active {
     background-color: #E1670E;
     border-color: #E1670E;
+}
+
+.transparent-button-gray {
+    padding: 19px 37px;
+
+    border: 1px solid #333333;
+    background: transparent;
+    color: #333333;
+}
+
+.transparent-button-gray:focus,
+.transparent-button-gray:hover {
+    background-color: #666666;
+    border-color: #666666;
+    color: #FFF;
+}
+
+.transparent-button-gray:active {
+    background-color: #000;
+    border-color: #000;
+    color: #FFF;
 }
 
 /* header */
@@ -242,6 +281,10 @@ body {
 }
 
 /* about */
+.about {
+    margin-bottom: 100px;
+}
+
 .about__heading {
     margin-top: 100px;
     margin-bottom: 20px;
@@ -257,16 +300,18 @@ body {
 }
 
 .about__card-block-left {
-    background-image: url("/img/about/about__img1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-
     height: 622px;
-    width: 50%;
-
+    width: 868px;
+    margin-right: 32px;
+    
+    flex: 1 0 868px;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
+    
+    background-image: url("/img/about/about__img1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .about__card-block-left-content {
@@ -291,6 +336,170 @@ body {
 
 .about__card-block-left__button {
 
+}
+
+
+.card1 {
+    height: 295px;
+    padding: 65px 100px 0 300px;
+
+    border: 1px solid #CACACA;
+    background-position: 60px 50%;
+    background-repeat: no-repeat;
+}
+
+.card1:first-child {
+    margin-bottom: 32px;
+}
+
+.card1__img-mechanism {
+    background-image: url("/img/about/about__mechanism-decoration.svg");
+}
+
+.card1__img-box {
+    background-image: url("/img/about/about__box-decoration.svg");
+}
+
+.card1__content {
+    max-width: 450px;
+}
+
+/* how-we-work */
+.how-we-work {
+    margin-bottom: 100px;
+}
+
+.how-we-work__container {
+    margin-bottom: 100px;
+}
+
+.how-we-work__heading {
+    margin: 0 0 50px 0;
+}
+
+.work-steps {
+    margin-bottom: 45px;
+}
+
+.work-steps__step {
+    display: inline-block;
+    margin-right: 79px;
+    padding: 3px;
+
+    border: 2px solid transparent;
+    color: #333333;
+    
+    text-decoration: none;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.work-steps__step:hover {
+    color: #FF9900;
+}
+
+.work-steps__step:focus {
+    border-color: #FF9900;
+    outline: none;
+}
+
+.work-steps__step:active {
+    color: #E1670E;
+    border-color: transparent;
+}
+
+.work-steps__active {
+    color: #E1670E;
+}
+
+.how-we-work__content {
+    
+}
+
+.how-we-work__buttons {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.how-we-work__button:not(:last-child) {
+    margin-right: 32px;
+}
+
+.how-we-work__slides {
+    position: relative;
+}
+
+.how-we-work__slide {
+    display: none;
+    min-height: 460px;
+
+    padding-right: 1000px;
+    padding-bottom: 110px;
+}
+
+.how-we-work__slide:nth-child(1) {
+    display: block;
+    background: url("/img/how-we-work/step1.jpg") no-repeat bottom right;
+}
+
+.how-we-work__slide:nth-child(2) {
+    background: url("/img/how-we-work/step2.jpg") no-repeat bottom right;
+}
+
+.how-we-work__slide:nth-child(3) {
+    background: url("/img/how-we-work/step3.jpg") no-repeat bottom right;
+}
+
+.how-we-work__slide:nth-child(4) {
+    background: url("/img/how-we-work/step4.jpg") no-repeat bottom right;
+}
+
+.how-we-work__slide-visible {
+    display: block;
+}
+
+/* faq */
+.faq {
+    margin-bottom: 100px;
+}
+
+.faq__heading {
+    margin-bottom: 32px;
+}
+
+.faq__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    margin: 0px;
+
+    border-top: 1px solid #CACACA;
+}
+
+.faq__item:last-child {
+    border-bottom: 1px solid #CACACA;
+}
+
+.faq__spoiler-button {
+    width: 50px;
+    height: 50px;
+
+    display: inline-block;
+}
+
+.faq__item-subheading {
+    margin: 0;
+}
+
+.faq__item-content {
+    flex: 0 0 100%;
+    margin-top: 30px;
+    display: none;
 }
 
 @media (max-width: 1870px) {
