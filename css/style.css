@@ -88,6 +88,23 @@ body {
     background-color: #E1670E;
 }
 
+.transparent-button-orange {
+    border: 3px solid #FF9900;
+    background-color: transparent;
+}
+
+
+.transparent-button-orange:hover,
+.transparent-button-orange:focus {
+    background-color: #FF9900;
+    border-color: #FF9900;
+}
+
+.transparent-button-orange:active {
+    background-color: #E1670E;
+    border-color: #E1670E;
+}
+
 /* header */
 .header {
     display: block;
@@ -146,9 +163,9 @@ body {
 }
 
 .top-nav__search-button {
-    padding: 2px;
-    width: 28px;
-    height: 28px;
+    padding: 3px;
+
+    transform: translateY(-2px);
 
     cursor: pointer;
     border: 2px solid transparent;
@@ -159,9 +176,7 @@ body {
 .top-nav__search-icon {
     display: inline;
     vertical-align: middle;
-    transform: translate(-2px, -2px);
 
-    border: 2px solid transparent;
     width: 24px;
     height: 24px;
 }
