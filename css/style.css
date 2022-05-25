@@ -177,6 +177,7 @@ body {
 .top-nav__link {
     padding: 5px;
 
+    user-select: none;
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 600;
