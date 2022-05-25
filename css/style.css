@@ -53,7 +53,7 @@ body {
     font-family: Montserrat;
     font-size: 48px;
     font-weight: 400;
-    line-height: 1; 
+    line-height: 1;
 }
 
 .section-content-font {
@@ -303,12 +303,12 @@ body {
     height: 622px;
     width: 868px;
     margin-right: 32px;
-    
+
     flex: 1 0 868px;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    
+
     background-image: url("/img/about/about__img1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -319,7 +319,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+
     background-color: rgba(0, 0, 0, 0.5);
 
     color: #FFF;
@@ -334,9 +334,7 @@ body {
     max-width: 70%;
 }
 
-.about__card-block-left__button {
-
-}
+.about__card-block-left__button {}
 
 
 .card1 {
@@ -388,7 +386,7 @@ body {
 
     border: 2px solid transparent;
     color: #333333;
-    
+
     text-decoration: none;
     font-family: Montserrat;
     font-size: 18px;
@@ -414,9 +412,7 @@ body {
     color: #E1670E;
 }
 
-.how-we-work__content {
-    
-}
+.how-we-work__content {}
 
 .how-we-work__buttons {
     position: absolute;
@@ -497,13 +493,13 @@ body {
     border-color: #FF9900;
 }
 
-.faq__item:hover + .faq__item,
-.faq__item:hover + .faq__item {
+.faq__item:hover+.faq__item,
+.faq__item:hover+.faq__item {
     border-color: #FF9900;
 }
 
 .faq__item:hover .faq__item-subheading,
-.faq__item:focus .faq__item-subheading{
+.faq__item:focus .faq__item-subheading {
     color: #FF9900;
 }
 
@@ -535,7 +531,7 @@ body {
 
 /* footer */
 .footer {
-    background-color:#222222;
+    background-color: #222222;
 }
 
 .footer__container {
@@ -555,7 +551,7 @@ body {
     height: 72px;
     display: inline-block;
     margin-bottom: 20px;
-    
+
     background: url("/img/footer/footer-logo.png") no-repeat center center;
 }
 
@@ -570,7 +566,7 @@ body {
     font-family: Montserrat;
     font-size: 18px;
     line-height: 36px;
-    font-weight: 600;  
+    font-weight: 600;
 }
 
 .footer__heading {
@@ -585,14 +581,11 @@ body {
 }
 
 .footer__content {
-    /* display: block; */
-    /* margin-left: auto; */
     padding-left: 33%;
     margin: 0;
-    
+
 
     color: #CACACA;
-    /* min-width: 70%; */
 }
 
 .footer__center {
@@ -605,7 +598,7 @@ body {
     width: 100%;
     margin-bottom: 25px;
     padding-left: 24px;
-    
+
     color: #FFF;
     background-color: #414141;
     border: none;
