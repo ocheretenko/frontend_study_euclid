@@ -79,7 +79,7 @@ body {
     line-height: 29px;
     color: #333333;
 
-    margin: 0px 0px 8px 0px;
+    margin: 0px 0px 9px 0px;
 }
 
 .button {
@@ -106,6 +106,10 @@ body {
     background-color: #E1670E;
 }
 
+.button2 {
+    padding: 22px 38px;
+}
+
 .button2:hover,
 .button2:focus {
     background-color: #F7B045;
@@ -116,6 +120,7 @@ body {
 }
 
 .transparent-button-orange {
+    padding: 19px 35px;
     border: 3px solid #FF9900;
     background-color: transparent;
 }
@@ -132,7 +137,12 @@ body {
 }
 
 .transparent-button-gray {
-    padding: 19px 37px;
+    padding: 21px 37px;
+
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
 
     border: 1px solid #333333;
     background: transparent;
@@ -179,7 +189,7 @@ body {
 }
 
 .top-nav__item:not(:last-child) {
-    margin-right: 85px;
+    margin-right: 68px;
 }
 
 .top-nav__link {
@@ -214,12 +224,12 @@ body {
 }
 
 .top-nav__search-button {
-    padding: 3px;
+    padding: 2px;
 
-    transform: translateY(-2px);
+    transform: translate(3px, -2px);
 
     cursor: pointer;
-    border: 2px solid transparent;
+    border: 0;
     background-color: transparent;
     text-align: center;
 }
@@ -241,12 +251,11 @@ body {
 }
 
 .top-nav__search-button:focus {
-    border: 2px solid #FF9900;
-    outline: 0;
+
 }
 
 .top-nav__search-button:active {
-    border: 2px solid transparent;
+    outline: 0;
 }
 
 .top-nav__search-button:active path {
@@ -258,8 +267,13 @@ body {
 }
 
 /* hero */
+.hero {
+    margin-bottom: 105px;
+}
+
 .hero__container {
     padding: 100px 0px 100px 80px;
+    min-height: 620px;
 
     background-image: url("/img/hero/bg1.jpg");
     background-repeat: no-repeat;
@@ -268,7 +282,7 @@ body {
 
 .hero__heading {
     max-width: 55%;
-    margin: 0px 0px 20px 0px;
+    margin: 0px 0px 25px 0px;
 
     color: #FFF;
     font-family: Montserrat;
@@ -278,7 +292,12 @@ body {
 }
 
 .hero__button {
-    padding: 25px 37px;
+    padding: 24px 39.5px;
+
+    font-family: Montserrat;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 28.6px;
 }
 
 .hero__content {
@@ -294,12 +313,11 @@ body {
 
 /* about */
 .about {
-    margin-bottom: 100px;
+    margin-bottom: 106px;
 }
 
 .about__heading {
-    margin-top: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .about__content {
@@ -316,7 +334,7 @@ body {
     width: 868px;
     margin-right: 32px;
 
-    flex: 1 0 868px;
+    flex: 0 1 868px;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -343,7 +361,7 @@ body {
 
 .about__card-block-left-text {
     margin: 0px;
-    max-width: 70%;
+    max-width: 60%;
 }
 
 .about__card-block-left__button {}
@@ -376,7 +394,7 @@ body {
 
 /* how-we-work */
 .how-we-work {
-    margin-bottom: 100px;
+    margin-bottom: 104px;
 }
 
 .how-we-work__container {
@@ -384,16 +402,17 @@ body {
 }
 
 .how-we-work__heading {
-    margin: 0 0 50px 0;
+    margin: 0 0 51px 0;
 }
 
 .work-steps {
-    margin-bottom: 45px;
+    margin-bottom: 46px;
+    transform: translateX(-5px);
 }
 
 .work-steps__step {
     display: inline-block;
-    margin-right: 79px;
+    margin-right: 71px;
     padding: 3px;
 
     border: 2px solid transparent;
@@ -424,7 +443,9 @@ body {
     color: #E1670E;
 }
 
-.how-we-work__content {}
+.how-we-work__content {
+    margin: 0;
+}
 
 .how-we-work__buttons {
     position: absolute;
@@ -433,7 +454,7 @@ body {
 }
 
 .how-we-work__button:not(:last-child) {
-    margin-right: 32px;
+    margin-right: 28px;
 }
 
 .how-we-work__slides {
@@ -475,7 +496,7 @@ body {
 }
 
 .faq__heading {
-    margin-bottom: 32px;
+    margin-bottom: 50px;
 }
 
 .faq__item {
@@ -562,7 +583,7 @@ body {
     width: 224px;
     height: 72px;
     display: inline-block;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 
     background: url("/img/footer/footer-logo.png") no-repeat center center;
 }
@@ -570,6 +591,7 @@ body {
 .footer-nav__list {
     list-style: none;
     margin: 0;
+    transform: translateX(-5px);
 }
 
 .footer-nav__link {
@@ -599,7 +621,8 @@ body {
 
 .footer__heading {
     color: #CACACA;
-    margin-bottom: 25px;
+    margin-top: 4px;
+    margin-bottom: 31px;
 }
 
 .footer__right {
@@ -609,7 +632,8 @@ body {
 }
 
 .footer__content {
-    padding-left: 33%;
+    padding-right: 10px;
+    padding-left: 236px;
     margin: 0;
 
 
@@ -653,6 +677,14 @@ body {
     resize: none;
 }
 
+.footer-form__submit {
+    padding: 20px 52px;
+}
+
+.footer-form__checkbox-area {
+    transform: translateX(5px);
+}
+
 .custom-footer-checkbox {
     position: absolute;
     z-index: -1;
@@ -661,6 +693,7 @@ body {
 
 .custom-footer-checkbox__label {
     padding: 4px;
+    
 
     user-select: none;
     color: #CACACA;
@@ -668,7 +701,7 @@ body {
 }
 
 .custom-footer-checkbox__label>svg {
-    margin-right: 4px;
+    /* margin-right: 0px; */
 }
 
 .custom-footer-checkbox:focus+.custom-footer-checkbox__label {
@@ -689,12 +722,13 @@ body {
 
 .footer__socials {
     position: absolute;
+    transform: translate(-5px, 7px);
     left: 0px;
     bottom: 0px;
 }
 
 .footer__social-link {
-    margin-right: 25px;
+    margin-right: 11px;
 
     line-height: 0;
     display: inline-block;
