@@ -35,6 +35,10 @@
     outline: 2px solid #FF9900;
 }
 
+*:active {
+    outline: 0;
+}
+
 ul {
     padding: 0;
 }
@@ -203,7 +207,10 @@ body {
 
 .top-nav__link:active {
     color: #E1670E;
-    border: 2px solid #E1670E;
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid #E1670E;
 }
 
 .top-nav__search-button {
@@ -659,20 +666,54 @@ body {
     color: #CACACA;
     border: 2px solid transparent;
 }
-.custom-footer-checkbox__label > svg {
+
+.custom-footer-checkbox__label>svg {
     margin-right: 4px;
 }
 
-.custom-footer-checkbox:focus + .custom-footer-checkbox__label {
+.custom-footer-checkbox:focus+.custom-footer-checkbox__label {
     border: 2px solid #FF9900;
 }
 
-.custom-footer-checkbox:checked + .custom-footer-checkbox__label path {
+.custom-footer-checkbox:checked+.custom-footer-checkbox__label path {
     stroke: #97EE3F;
 }
 
-.custom-footer-checkbox + .custom-footer-checkbox__label path {
+.custom-footer-checkbox+.custom-footer-checkbox__label path {
     stroke: transparent;
+}
+
+.footer__left {
+    position: relative;
+}
+
+.footer__socials {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+.footer__social-link {
+    margin-right: 25px;
+
+    line-height: 0;
+    display: inline-block;
+}
+
+.footer__social-icon {
+    box-sizing: content-box;
+    padding: 5px;
+    width: 60px;
+    height: 60px;
+}
+
+.footer__social-link:hover .footer__social-icon path {
+    fill: #FF9900;
+}
+
+.footer__social-link:active .footer__social-icon path {
+    fill: #E1670E;
+    outline: 0px;
 }
 
 @media (max-width: 1870px) {
