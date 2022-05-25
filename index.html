@@ -206,11 +206,20 @@
             <div class="footer__center">
                 <h2 class="section-heading footer__heading">Оставить заявку</h2>
                 <form class="footer-form" method="post" action="/">
-                    <input class="footer-form__text-input" type="text" name="name" placeholder="Фамилия, имя и отчество*">
-                    <input class="footer-form__text-input" type="email" name="email" placeholder="E-mail*">
-                    <textarea class="footer-form__text-input footer-form__textarea" name="message" placeholder="Сообщение"></textarea>
+                    <input class="section-content-font footer-form__text-input" type="text" name="name" placeholder="Фамилия, имя и отчество*">
+                    <input class="section-content-font footer-form__text-input" type="email" name="email" placeholder="E-mail*">
+                    <textarea class="section-content-font footer-form__text-input footer-form__textarea" name="message" placeholder="Сообщение"></textarea>
                     <button class="button button2 footer-form__submit">Отправить данные</button>
-                    <span class="footer-form__checkbox-area"><input class="footer-form__checkbox" type="checkbox">Отправить данные</span>
+                    <span class="footer-form__checkbox-area">
+                        <input id="agreement" class="custom-footer-checkbox" type="checkbox" checked>
+                        <label for="agreement" class="section-content-font custom-footer-checkbox__label">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" y="0.5" width="13" height="13" stroke="#CACACA"/>
+                                <path d="M10.9498 4.08233L6.00002 9.03208L3.17159 6.20365" stroke="#97EE3F" stroke-width="2"/>
+                            </svg>
+                            Согласен на обработку данных
+                        </label>
+                    </span>
                 </form>
             </div>
             <div class="footer__right">
