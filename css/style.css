@@ -31,6 +31,10 @@
     box-sizing: border-box;
 }
 
+*:focus {
+    outline: 2px solid #FF9900;
+}
+
 ul {
     padding: 0;
 }
