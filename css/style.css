@@ -254,10 +254,6 @@ body {
     fill: #FF9900;
 }
 
-.top-nav__search-button:focus {
-
-}
-
 .top-nav__search-button:active {
     outline: 0;
 }
@@ -371,9 +367,6 @@ body {
     margin: 0px;
     max-width: 60%;
 }
-
-.about__card-block-left__button {}
-
 
 .card1 {
     height: 295px;
@@ -701,15 +694,11 @@ body {
 
 .custom-footer-checkbox__label {
     padding: 4px;
-    
+
 
     user-select: none;
     color: #CACACA;
     border: 2px solid transparent;
-}
-
-.custom-footer-checkbox__label>svg {
-    /* margin-right: 0px; */
 }
 
 .custom-footer-checkbox:focus+.custom-footer-checkbox__label {
