@@ -272,7 +272,7 @@ body {
 }
 
 .hero__container {
-    padding: 100px 0px 100px 80px;
+    padding: 100px 0px 0px 80px;
     min-height: 620px;
 
     background-image: url("/img/hero/bg1.jpg");
