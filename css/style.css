@@ -176,7 +176,8 @@ body {
 }
 
 .header__container {
-    padding: 14px 0px 14px 0px;
+    /* padding: 14px 0px 14px 0px; */
+    height: 100%;
 
     display: flex;
     justify-content: space-between;
@@ -325,6 +326,7 @@ body {
 }
 
 .about__content {
+    margin: 0;
     margin-bottom: 50px;
     max-width: 1235px;
 }
@@ -344,14 +346,15 @@ body {
     /* height: 622px; */
     /* width: 868px; */
     /* margin-right: 32px; */
-    aspect-ratio: 868 / 622;
+    /* aspect-ratio: 868 / 622; */
+    aspect-ratio: 924 / 640;
 
     flex: 1 1 868px;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
 
-    background-image: url("/img/about/about__img1.jpg");
+    background-image: url("/img/about/about__img2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -474,16 +477,28 @@ body {
 .how-we-work__slide {
     display: none;
     min-height: 460px;
+    gap: 140px;
+    /* padding-right: 58%; */
+}
 
-    padding-right: 58%;
+.how-we-work__slide-left {
+    /* width: 40%; */
     padding-bottom: 110px;
+    flex: 1 1 900px;
+}
 
-    background-size: 100px 100px;
+.how-we-work__slide-right {
+    flex: 0 1 870px;
+    min-width: 437px;
 }
 
 .how-we-work__slide:nth-child(1) {
-    display: block;
-    background: url("/img/how-we-work/step1.jpg") no-repeat bottom right;
+    display: flex;
+}
+
+.how-we-work__slide:nth-child(1) .how-we-work__slide-right {
+    background: url("/img/how-we-work/step1.jpg") no-repeat bottom;
+    background-size: cover;
 }
 
 .how-we-work__slide:nth-child(2) {
@@ -530,7 +545,7 @@ body {
 .faq__spoiler-button {
     width: 50px;
     height: 50px;
-
+    flex: 0 0 50px;
     display: inline-block;
 }
 
@@ -564,8 +579,18 @@ body {
     transform: rotate(45deg);
 }
 
+.faq__headline {
+    display: flex;
+    flex: 0 0 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .faq__item-subheading {
+    /* flex: 1 1; */
+    padding-right: 12%;
     margin: 0;
+    line-height: 32px;
 }
 
 .faq__item-content {
@@ -785,5 +810,89 @@ body {
 
     .hero__content {
         font-size: 20px;
+    }
+}
+
+@media (max-width: 1230px) {
+    .how-we-work__slide {
+        gap: 50px;
+    }
+
+}
+
+@media (max-width: 1699px) {
+    .footer__right {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    .header__logo {
+        width: 150px;
+        height: 48px;
+    }
+
+    .hero__container {
+        padding: 155px 77px 160px 77px;
+    }
+
+    .hero__heading {
+        line-height: 77px;
+        margin-bottom: 10px;
+    }
+
+    .hero__content {
+        line-height: 25px;
+        margin-bottom: 61px;
+    }
+
+    .hero {
+        margin-bottom: 87px;
+    }
+
+    .about {
+        margin-bottom: 86px;
+    }
+
+    .about__heading {
+        margin-bottom: 14px;
+    }
+
+    .about__content {
+        margin-bottom: 63px;
+    }
+
+    .card1 {
+        padding-left: 316px;
+
+        background-position: 75px 50%;
+    }
+
+    .how-we-work {
+        margin-bottom: 86px;
+    }
+
+    .how-we-work__slide-left {
+        padding-bottom: 90px;
+    }
+
+    .faq {
+        margin-bottom: 79px;
+    }
+
+    .faq__heading {
+        margin-bottom: 37px;
+    }
+
+    .faq__item-subheading {
+        font-size: 20px;
+    }
+
+    .footer__center {
+        flex-basis: 540px;
+    }
+
+    .footer-form__submit {
+        padding: 20px 37px;
     }
 }
