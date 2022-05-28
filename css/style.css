@@ -289,6 +289,8 @@ body {
     max-width: 850px;
     margin: 0px 0px 25px 0px;
 
+    overflow-wrap: anywhere;
+
     color: #FFF;
     font-family: Montserrat;
     font-size: 70px;
@@ -358,6 +360,10 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
+
+.about__card-block-left-content-outer {
+    display: none;
 }
 
 .about__card-block-left-content {
@@ -791,7 +797,7 @@ body {
 @media (max-width: 1870px) {
     .container {
         width: auto;
-        margin: 0 50px !important;
+        margin: 0 50px;
     }
 }
 
@@ -975,6 +981,10 @@ body {
         margin-bottom: 48px;
     }
 
+    .work-steps__step {
+        margin-right: 0 !important;
+    }
+
     .how-we-work__slide {
         flex-wrap: wrap-reverse;
         gap: 40px;
@@ -986,7 +996,6 @@ body {
         background-position: center center !important;
     }
 }
-
 
 @media (max-width: 768px) {
     .header {
@@ -1010,3 +1019,111 @@ body {
     }
 }
 
+@media (max-width: 320px) {
+    .container {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .button {
+        font-size: 12px;
+        padding: 11px 14px 14px 14px;
+    }
+
+    .section-heading {
+        font-size: 24px;
+    }
+
+    .section-content-font {
+        font-size: 14px;
+    }
+
+    .subheading {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .hero__container {
+        padding: 60px 22px;
+        min-height: unset;
+        text-align: center;
+    }
+
+    .hero__heading {
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .hero__content {
+        font-size: 12px;
+        line-height: 1.2;
+        margin-bottom: 32px;
+    }
+    
+    .hero__button {
+        padding: 6px 22px;
+    }
+
+    .about__card-block-left-content {
+        display: none;
+    }
+
+    .about__card-block-left-text {
+        max-width: unset;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+
+    .about__card-block-left-content-outer {
+        display: block;
+    }
+
+    .card1 {
+        padding: 51px 0 0 0;
+        background-size: 64px 49px;
+        background-position: left top;
+        border: 0;
+    }
+
+    .about__card-block-left__button {
+        color: #FF9900;
+    }
+
+    .about__card-block-left__button:focus {
+        color: #FFF;
+    }
+
+    .how-we-work__slide-right {
+        min-width: unset;
+    }
+
+    .faq__item-subheading {
+        font-size: 14px;
+        padding-right: 0;
+    }
+
+    .faq__spoiler-button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer__center {
+        width: unset;
+    }
+
+    .footer-form {
+        justify-content: center;
+    }
+
+    .footer__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__socials {
+        position: inherit;
+    }
+}
