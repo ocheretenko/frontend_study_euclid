@@ -338,8 +338,8 @@ body {
 }
 
 .about__card-block-right {
-    flex: 1 1;
-    min-width: 870px;
+    flex: 1 1 870px;
+    /* min-width: 870px; */
 }
 
 .about__card-block-left {
@@ -377,7 +377,7 @@ body {
 
 .about__card-block-left-text {
     margin: 0px;
-    max-width: 60%;
+    max-width: 58%;
 }
 
 .card1 {
@@ -490,6 +490,7 @@ body {
 .how-we-work__slide-right {
     flex: 0 1 870px;
     min-width: 437px;
+    margin-top: 9px;
 }
 
 .how-we-work__slide:nth-child(1) {
@@ -795,9 +796,6 @@ body {
         display: none;
     }
 
-    .header__container {
-    }
-
     .header__burger {
         display: block;
     }
@@ -818,6 +816,10 @@ body {
         gap: 50px;
     }
 
+    .hero__container {
+        background-image: url("/img/hero/bg1-1.jpg");
+    }
+
 }
 
 @media (max-width: 1699px) {
@@ -827,6 +829,11 @@ body {
 }
 
 @media (max-width: 1024px) {
+    
+    .header__container {
+        padding-top: 5px;
+    }
+
     .header__logo {
         width: 150px;
         height: 48px;
@@ -872,8 +879,12 @@ body {
         margin-bottom: 86px;
     }
 
+    .work-steps {
+        margin-bottom: 51px;
+    }
+
     .how-we-work__slide-left {
-        padding-bottom: 90px;
+        padding-bottom: 85px;
     }
 
     .faq {
