@@ -357,6 +357,7 @@ body {
     background-image: url("/img/about/about__img2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center center;
 }
 
 .about__card-block-left-content {
@@ -425,7 +426,6 @@ body {
 
 .work-steps__step {
     display: inline-block;
-    margin-right: 71px;
     padding: 3px;
 
     border: 2px solid transparent;
@@ -436,6 +436,10 @@ body {
     font-size: 18px;
     font-weight: 400;
     line-height: 1;
+}
+
+.work-steps__step:not(:last-child) {
+    margin-right: 71px;
 }
 
 .work-steps__step:hover {
@@ -799,6 +803,14 @@ body {
     .header__burger {
         display: block;
     }
+
+    .footer__center {
+        flex-basis: 540px;
+    }
+
+    .footer-form__submit {
+        padding: 20px 37px;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -898,12 +910,103 @@ body {
     .faq__item-subheading {
         font-size: 20px;
     }
+}
+
+@media (max-width: 955px) {
+    .section-heading {
+        font-size: 48px;
+    }
+
+    .hero__container {
+        padding: 160px 40px;
+    }
+
+    .hero__heading {
+        font-size: 50px;
+        line-height: 61px;
+    }
+
+    .hero__content {
+        font-size: 18px;
+    }
+
+    .about__card-block-left {
+        aspect-ratio: 668 / 650;
+    }
+
+    .about__card-block-left-text {
+        max-width: 62%;
+    }
+
+    .about__card-block-left-content {
+        padding: 34px 40px;
+    }
+
+    .card1 {
+        background-size: 114px 99px;
+        background-position: 40px 50%;
+        padding: 35px 35px 35px 170px;
+        height: 235px;
+    }
+
+
+
+    .footer__container {
+        flex-direction: column-reverse;
+    }
+
+    .footer__left {
+        padding-bottom: 60px;
+    }
+
+    .footer-nav__list {
+        display: none;
+    }
 
     .footer__center {
-        flex-basis: 540px;
-    }
-
-    .footer-form__submit {
-        padding: 20px 37px;
+        width: 81%;
     }
 }
+
+@media (max-width: 999px) {
+    .work-steps {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 48px;
+    }
+
+    .how-we-work__slide {
+        flex-wrap: wrap-reverse;
+        gap: 40px;
+    }
+
+    .how-we-work__slide-right {
+        aspect-ratio: 668 / 284;
+        margin-top: 0px;
+        background-position: center center !important;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .header {
+        height: 69px;
+    }
+
+    .header__container {
+        padding-top: 0px;
+    }   
+    
+    .faq__item-subheading {
+        padding-right: 7%;
+    }
+
+    .faq__heading {
+        line-height: 1.1;
+    }
+
+    .about__content {
+        margin-bottom: 57px;
+    }
+}
+
