@@ -176,7 +176,6 @@ body {
 }
 
 .header__container {
-    /* padding: 14px 0px 14px 0px; */
     height: 100%;
 
     display: flex;
@@ -276,19 +275,42 @@ body {
     margin-bottom: 105px;
 }
 
+.swiper {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.swiper .swiper-slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.how-we-work__slide1 {
+    background-image: url("/img/hero/bg1.jpg");
+}
+
+.how-we-work__slide2 {
+    background-image: url("/img/hero/bg2.jpg");
+}
+
+.how-we-work__slide3 {
+    background-image: url("/img/hero/bg3.jpg");
+}
+
 .hero__container {
     padding: 100px 80px 100px 80px;
     min-height: 620px;
-
-    background-image: url("/img/hero/bg1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    position: relative;
 }
 
 .hero__heading {
     max-width: 850px;
     margin: 0px 0px 25px 0px;
-
+    position: relative;
+    z-index: 2;
     overflow-wrap: anywhere;
 
     color: #FFF;
@@ -299,6 +321,9 @@ body {
 }
 
 .hero__button {
+    position: relative;
+    z-index: 2;
+
     padding: 24px 39.5px;
 
     font-family: Montserrat;
@@ -308,9 +333,12 @@ body {
 }
 
 .hero__content {
+    position: relative;
+    z-index: 2;
+
     max-width: 850px;
     margin: 0px 0px 90px 0px;
-
+    
     color: #FFF;
     font-family: Montserrat;
     font-size: 24px;

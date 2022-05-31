@@ -6,8 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <!-- work slides -->
     <script src="/script/how-we-work__slides.js"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/script/swiper-init.js"></script>
+    <link rel="stylesheet" href="/css/swiper-custom.css">
+    <!-- main styles -->
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <header class="header">
@@ -46,6 +53,14 @@
                 <h1 class="hero__heading">Проектные решения любой сложности</h1>
                 <p class="hero__content">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов</p>
                 <a href class="button hero__button">Заказать расчёт</a>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide how-we-work__slide1"></div>
+                        <div class="swiper-slide how-we-work__slide2"></div>
+                        <div class="swiper-slide how-we-work__slide3"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </section>
         <section class="about">
