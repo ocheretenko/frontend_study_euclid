@@ -503,29 +503,25 @@ body {
     margin-top: 9px;
 }
 
-.how-we-work__slide:nth-child(1) {
-    display: flex;
-}
-
 .how-we-work__slide:nth-child(1) .how-we-work__slide-right {
     background: url("/img/how-we-work/step1.jpg") no-repeat bottom;
     background-size: cover;
 }
 
-.how-we-work__slide:nth-child(2) {
-    background: url("/img/how-we-work/step2.jpg") no-repeat bottom right;
+.how-we-work__slide:nth-child(2) .how-we-work__slide-right {
+    background: url("/img/how-we-work/step2.jpg") no-repeat bottom;
 }
 
-.how-we-work__slide:nth-child(3) {
-    background: url("/img/how-we-work/step3.jpg") no-repeat bottom right;
+.how-we-work__slide:nth-child(3) .how-we-work__slide-right {
+    background: url("/img/how-we-work/step3.jpg") no-repeat bottom;
 }
 
-.how-we-work__slide:nth-child(4) {
-    background: url("/img/how-we-work/step4.jpg") no-repeat bottom right;
+.how-we-work__slide:nth-child(4) .how-we-work__slide-right {
+    background: url("/img/how-we-work/step4.jpg") no-repeat bottom;
 }
 
-.how-we-work__slide-visible {
-    display: block;
+.how-we-work__slide--visible {
+    display: flex;
 }
 
 /* faq */
