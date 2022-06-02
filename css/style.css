@@ -26,6 +26,10 @@
         url("/fonts/Montserrat-ExtraBold.woff");
 }
 
+:root {
+    --color-orange: #FF9900;
+}
+
 /* common classes */
 * {
     box-sizing: border-box;
@@ -36,7 +40,7 @@
 }
 
 *:focus {
-    outline: 2px solid #FF9900;
+    outline: 2px solid var(--color-orange);
 }
 
 *:active {
@@ -88,7 +92,7 @@ body {
 
 .button {
     display: inline-block;
-    background-color: #FF9900;
+    background-color: var(--color-orange);
     color: #FFF;
     padding: 20px 38px;
 
@@ -125,14 +129,14 @@ body {
 
 .transparent-button-orange {
     padding: 19px 35px;
-    border: 3px solid #FF9900;
+    border: 3px solid var(--color-orange);
     background-color: transparent;
 }
 
 .transparent-button-orange:hover,
 .transparent-button-orange:focus {
-    background-color: #FF9900;
-    border-color: #FF9900;
+    background-color: var(--color-orange);
+    border-color: var(--color-orange);
 }
 
 .transparent-button-orange:active {
@@ -215,11 +219,11 @@ body {
 }
 
 .top-nav__link:hover {
-    border-bottom: 2px solid #FF9900;
+    border-bottom: 2px solid var(--color-orange);
 }
 
 .top-nav__link:focus {
-    border: 2px solid #FF9900;
+    border: 2px solid var(--color-orange);
     outline: none;
 }
 
@@ -251,11 +255,11 @@ body {
 }
 
 .top-nav__search-button:hover path {
-    stroke: #FF9900;
+    stroke: var(--color-orange);
 }
 
 .top-nav__search-button:hover rect {
-    fill: #FF9900;
+    fill: var(--color-orange);
 }
 
 .top-nav__search-button:active {
@@ -263,11 +267,11 @@ body {
 }
 
 .top-nav__search-button:active path {
-    stroke: #FF9900;
+    stroke: var(--color-orange);
 }
 
 .top-nav__search-button:active rect {
-    fill: #FF9900;
+    fill: var(--color-orange);
 }
 
 /* hero */
@@ -477,11 +481,11 @@ body {
 }
 
 .work-steps__step:hover {
-    color: #FF9900;
+    color: var(--color-orange);
 }
 
 .work-steps__step:focus {
-    border-color: #FF9900;
+    border-color: var(--color-orange);
     outline: none;
 }
 
@@ -598,23 +602,23 @@ body {
 }
 
 .faq__item:hover {
-    border-color: #FF9900;
+    border-color: var(--color-orange);
 }
 
 .faq__item:hover+.faq__item,
 .faq__item:hover+.faq__item {
-    border-color: #FF9900;
+    border-color: var(--color-orange);
 }
 
 .faq__item:hover .faq__item-subheading,
 .faq__item:focus .faq__item-subheading {
-    color: #FF9900;
+    color: var(--color-orange);
 }
 
 
 .faq__item:hover .faq__ellipse,
 .faq__item:focus .faq__ellipse {
-    fill: #FF9900;
+    fill: var(--color-orange);
 }
 
 .faq__item:hover .faq__plus,
@@ -688,11 +692,11 @@ body {
 }
 
 .footer-nav__link:hover {
-    color: #FF9900;
+    color: var(--color-orange);
 }
 
 .footer-nav__link:focus {
-    outline: 2px solid #FF9900;
+    outline: 2px solid var(--color-orange);
 }
 
 .footer-nav__link:active {
@@ -782,7 +786,7 @@ body {
 }
 
 .custom-footer-checkbox:focus+.custom-footer-checkbox__label {
-    border: 2px solid #FF9900;
+    border: 2px solid var(--color-orange);
 }
 
 .custom-footer-checkbox:checked+.custom-footer-checkbox__label path {
@@ -819,7 +823,7 @@ body {
 }
 
 .footer__social-link:hover .footer__social-icon path {
-    fill: #FF9900;
+    fill: var(--color-orange);
 }
 
 .footer__social-link:active .footer__social-icon path {
@@ -1106,7 +1110,7 @@ body {
     }
 
     .about__card-block-left__button {
-        color: #FF9900;
+        color: var(--color-orange);
     }
 
     .about__card-block-left__button:focus {
