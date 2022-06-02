@@ -189,6 +189,9 @@ body {
 
 .header__burger {
     display: none;
+    outline-offset: 6px;
+    width: 30px;
+    height: 23px;
 }
 
 .top-nav__list {
