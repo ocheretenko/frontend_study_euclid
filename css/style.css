@@ -601,30 +601,26 @@ body {
     display: inline-block;
 }
 
-.faq__item:hover {
-    border-color: var(--color-orange);
-}
-
+.faq__tophighlight,
+.faq__item:hover,
 .faq__item:hover+.faq__item,
 .faq__item:hover+.faq__item {
     border-color: var(--color-orange);
 }
 
 .faq__item:hover .faq__item-subheading,
+.ui-state-active .faq__item-subheading,
 .ui-state-focus .faq__item-subheading {
     color: var(--color-orange);
 }
 
-
+.ui-state-active .faq__ellipse,
 .faq__item:hover .faq__ellipse,
 .ui-state-focus .faq__ellipse {
     fill: var(--color-orange);
 }
 
-.faq__tophighlight {
-    border-color: var(--color-orange);
-}
-
+.ui-state-active .faq__plus,
 .faq__item:hover .faq__plus,
 .ui-state-focus .faq__plus {
     fill: #FFF;
