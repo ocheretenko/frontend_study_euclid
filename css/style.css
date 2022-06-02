@@ -611,18 +611,22 @@ body {
 }
 
 .faq__item:hover .faq__item-subheading,
-.faq__item:focus .faq__item-subheading {
+.ui-state-focus .faq__item-subheading {
     color: var(--color-orange);
 }
 
 
 .faq__item:hover .faq__ellipse,
-.faq__item:focus .faq__ellipse {
+.ui-state-focus .faq__ellipse {
     fill: var(--color-orange);
 }
 
+.faq__tophighlight {
+    border-color: var(--color-orange);
+}
+
 .faq__item:hover .faq__plus,
-.faq__item:focus .faq__plus {
+.ui-state-focus .faq__plus {
     fill: #FFF;
 }
 
