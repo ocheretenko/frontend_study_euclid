@@ -3,6 +3,7 @@ $( function() {
       heightStyle: "content",
       collapsible: true,
       icons: false,
+      active: false,
       beforeActivate: function(event, ui) {
         a = ui;  
         console.log(ui);
