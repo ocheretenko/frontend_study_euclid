@@ -194,6 +194,11 @@ body {
     height: 23px;
 }
 
+.top-nav {
+    display: flex;
+    gap: 85px;
+}
+
 .top-nav__list {
     list-style: none;
     align-items: center;
