@@ -18,6 +18,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
     <script src="/script/accordion.js"></script>
+    <!-- burger -->
+    <script src="/script/top-nav-burger.js"></script>
     <!-- main styles -->
     <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -37,18 +39,19 @@
             
             <nav class="header__nav top-nav">
                 <ul class="top-nav__list">
+                    <button class="top-nav__item top-nav__close-btn"></button>
                     <li class="top-nav__item"><a href class="top-nav__link">О нас</a></li>
                     <li class="top-nav__item"><a href class="top-nav__link">Проекты</a></li>
                     <li class="top-nav__item"><a href class="top-nav__link">Этапы</a></li>
                     <li class="top-nav__item"><a href class="top-nav__link">Отзывы</a></li>
                     <li class="top-nav__item"><a href class="top-nav__link">Контакты</a></li>
-                    <button class="top-nav__search-button">
-                        <svg class="top-nav__search-icon" alt="Поиск" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#333333"/>
-                            <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="#333333" stroke-width="2"/>
-                        </svg>
-                    </button>
                 </ul>
+                <button class="top-nav__search-button">
+                    <svg class="top-nav__search-icon" alt="Поиск" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6062 17.3762)" fill="#333333"/>
+                        <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="#333333" stroke-width="2"/>
+                    </svg>
+                </button>
             </nav>
         </div>
     </header>

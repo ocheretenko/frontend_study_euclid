@@ -207,6 +207,16 @@ body {
     margin-right: 68px;
 }
 
+.top-nav__close-btn {
+    display: none;
+    width: 23px;
+    height: 23px;
+
+    background: url("/img/nax-X.svg") no-repeat center center;
+    border: 0;
+    outline-offset: 4px;
+}
+
 .top-nav__link {
     padding: 5px;
 
@@ -842,8 +852,42 @@ body {
 }
 
 @media (max-width: 1340px) {
-    .top-nav__item {
+    
+    /* burger */
+    .top-nav__item:not(:last-child) {
+        margin-bottom: 60px;
+    }
+
+    .top-nav__item:first-child {
+        margin-bottom: 100px;
+    }
+
+    .top-nav__list {
+        position: absolute;
+        width: 420px;
+        height: 768px;
+        
         display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        margin-top: 0;
+        padding: 39px 50px 0 50px;
+        z-index: 3;
+        left: 0px;
+        top: 0px;
+        
+        background-color: #FFF;
+        box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .top-nav__list--active {
+        display: flex;
+    }
+
+    .top-nav__close-btn {
+        display: block;
     }
 
     .header__burger {
