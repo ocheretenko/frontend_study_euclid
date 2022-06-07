@@ -398,14 +398,9 @@ body {
 
 .about__card-block-right {
     flex: 1 1 870px;
-    /* min-width: 870px; */
 }
 
 .about__card-block-left {
-    /* height: 622px; */
-    /* width: 868px; */
-    /* margin-right: 32px; */
-    /* aspect-ratio: 868 / 622; */
     aspect-ratio: 924 / 640;
 
     flex: 1 1 868px;
@@ -542,7 +537,6 @@ body {
     display: none;
     min-height: 460px;
     gap: 140px;
-    /* padding-right: 58%; */
 }
 
 .how-we-work__slide-left {
@@ -664,7 +658,6 @@ body {
 }
 
 .faq__item-subheading {
-    /* flex: 1 1; */
     padding-right: 12%;
     margin: 0;
     line-height: 32px;
