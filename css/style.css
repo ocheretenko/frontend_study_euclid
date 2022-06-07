@@ -39,7 +39,7 @@
     color: #CACACA;
 }
 
-*:focus {
+button:focus-visible, *:focus {
     outline: 2px solid var(--color-orange);
 }
 
@@ -96,6 +96,7 @@ body {
     color: #FFF;
     padding: 20px 38px;
 
+    border: 0;
     font-family: Montserrat;
     font-size: 16px;
     font-weight: 700;
@@ -189,9 +190,11 @@ body {
 
 .header__burger {
     display: none;
-    outline-offset: 6px;
     width: 30px;
     height: 23px;
+    outline-offset: 6px;
+
+    cursor: pointer;
 }
 
 .top-nav {
@@ -217,6 +220,8 @@ body {
     margin-left: 7px;
     width: 23px;
     height: 23px;
+
+    cursor: pointer;
 
     background: url("/img/nax-X.svg") no-repeat center center;
     border: 0;
