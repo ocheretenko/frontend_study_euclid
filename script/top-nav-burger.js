@@ -11,6 +11,16 @@ function toggleTopNav() {
 };
 
 function resizeTopNav() {
+
+    
+    //if burger is NOT visible
+    if (window.getComputedStyle(document.querySelector('.header__burger'), null).display == 'none')
+    {
+        document.querySelector('.top-nav__list').style.height = 'unset';
+        return;
+    }
+
     var h = document.querySelector('.hero').clientHeight + document.querySelector('.header').clientHeight + 1;
     document.querySelector('.top-nav__list').style.height = h + 'px';
+    
 }
