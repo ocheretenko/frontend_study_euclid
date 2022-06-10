@@ -103,6 +103,7 @@ body {
     font-weight: 700;
     line-height: 1;
 
+    user-select: none;
     text-decoration: none;
 }
 
@@ -341,6 +342,7 @@ body {
     position: relative;
     z-index: 2;
     overflow-wrap: anywhere;
+    pointer-events: none;
 
     color: #FFF;
     font-family: Montserrat;
@@ -368,6 +370,7 @@ body {
     max-width: 850px;
     margin: 0px 0px 90px 0px;
 
+    pointer-events: none;
     color: #FFF;
     font-family: Montserrat;
     font-size: 24px;
