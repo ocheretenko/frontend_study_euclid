@@ -1,29 +1,29 @@
 @font-face {
     font-family: Montserrat;
     font-weight: 400;
-    src: url("/fonts/Montserrat-Regular.woff2"),
-        url("/fonts/Montserrat-Regular.woff");
+    src: url("fonts/Montserrat-Regular.woff2"),
+        url("fonts/Montserrat-Regular.woff");
 }
 
 @font-face {
     font-family: Montserrat;
     font-weight: 600;
-    src: url("/fonts/Montserrat-SemiBold.woff2"),
-        url("/fonts/Montserrat-SemiBold.woff");
+    src: url("fonts/Montserrat-SemiBold.woff2"),
+        url("fonts/Montserrat-SemiBold.woff");
 }
 
 @font-face {
     font-family: Montserrat;
     font-weight: 700;
-    src: url("/fonts/Montserrat-Bold.woff2"),
-        url("/fonts/Montserrat-Bold.woff");
+    src: url("fonts/Montserrat-Bold.woff2"),
+        url("fonts/Montserrat-Bold.woff");
 }
 
 @font-face {
     font-family: Montserrat;
     font-weight: 800;
-    src: url("/fonts/Montserrat-ExtraBold.woff2"),
-        url("/fonts/Montserrat-ExtraBold.woff");
+    src: url("fonts/Montserrat-ExtraBold.woff2"),
+        url("fonts/Montserrat-ExtraBold.woff");
 }
 
 :root {
@@ -225,7 +225,7 @@ body {
 
     cursor: pointer;
 
-    background: url("/img/nax-X.svg") no-repeat center center;
+    background: url("img/nax-X.svg") no-repeat center center;
     border: 0;
     outline-offset: 4px;
 }
@@ -319,15 +319,15 @@ body {
 }
 
 .how-we-work__slide1 {
-    background-image: url("/img/hero/bg1.jpg");
+    background-image: url("img/hero/bg1.jpg");
 }
 
 .how-we-work__slide2 {
-    background-image: url("/img/hero/bg2.jpg");
+    background-image: url("img/hero/bg2.jpg");
 }
 
 .how-we-work__slide3 {
-    background-image: url("/img/hero/bg3.jpg");
+    background-image: url("img/hero/bg3.jpg");
 }
 
 .hero__container {
@@ -411,7 +411,7 @@ body {
     flex-direction: row;
     align-items: flex-end;
 
-    background-image: url("/img/about/about__img2.jpg");
+    background-image: url("img/about/about__img2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -456,11 +456,11 @@ body {
 }
 
 .card1__img-mechanism {
-    background-image: url("/img/about/about__mechanism-decoration.svg");
+    background-image: url("img/about/about__mechanism-decoration.svg");
 }
 
 .card1__img-box {
-    background-image: url("/img/about/about__box-decoration.svg");
+    background-image: url("img/about/about__box-decoration.svg");
 }
 
 .card1__content {
@@ -556,20 +556,20 @@ body {
 }
 
 .how-we-work__slide:nth-child(1) .how-we-work__slide-right {
-    background: url("/img/how-we-work/step1.jpg") no-repeat bottom;
+    background: url("img/how-we-work/step1.jpg") no-repeat bottom;
     background-size: cover;
 }
 
 .how-we-work__slide:nth-child(2) .how-we-work__slide-right {
-    background: url("/img/how-we-work/step2.jpg") no-repeat bottom;
+    background: url("img/how-we-work/step2.jpg") no-repeat bottom;
 }
 
 .how-we-work__slide:nth-child(3) .how-we-work__slide-right {
-    background: url("/img/how-we-work/step3.jpg") no-repeat bottom;
+    background: url("img/how-we-work/step3.jpg") no-repeat bottom;
 }
 
 .how-we-work__slide:nth-child(4) .how-we-work__slide-right {
-    background: url("/img/how-we-work/step4.jpg") no-repeat bottom;
+    background: url("img/how-we-work/step4.jpg") no-repeat bottom;
 }
 
 .how-we-work__slide--visible {
@@ -689,7 +689,7 @@ body {
     display: inline-block;
     margin-bottom: 15px;
 
-    background: url("/img/footer/footer-logo.png") no-repeat center center;
+    background: url("img/footer/footer-logo.png") no-repeat center center;
 }
 
 .footer-nav__list {
@@ -928,7 +928,7 @@ body {
     }
 
     .hero__container {
-        background-image: url("/img/hero/bg1-1.jpg");
+        background-image: url("img/hero/bg1-1.jpg");
     }
 
 }
